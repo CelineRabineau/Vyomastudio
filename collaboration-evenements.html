@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaboration & Événements</title>
+    <meta name="description" content="La Méthode Vyoma : une méthode pour stabiliser et clarifier l'esprit.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="collaboration-evenements.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/logo.png" alt="Logo Vyoma">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="la-methode-vyoma.html" data-fr="La Méthode" data-en="The Method">La Méthode</a></li>
+            <li><a href="session.html" data-fr="Sessions" data-en="Sessions">Sessions</a></li>
+            <li><a href="programme.html" data-fr="Programme" data-en="Program">Programme</a></li>
+            <li><a href="journal.html" data-fr="Journal" data-en="Journal">Journal</a></li>
+            <li><a href="a-propos.html" data-fr="À propos" data-en="About">À propos</a></li>
+        </ul>
+    </nav>
+
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <button id="langToggle">EN</button>
+
+</header>
+
+<div class="header-gradient"></div>
+
+<section class="hero">
+
+    <img src="assets/acceuil-collaboration.png" alt="Collaboration & Events">
+
+    <div class="hero-text hero-right">
+
+        <h1 data-fr="COLLABORATIONS<br>ET<br>ÉVÉNEMENTS"
+            data-en="COLLABORATIONS<br>AND<br>EVENTS">
+            COLLABORATIONS<br>ET<br>ÉVÉNEMENTS
+        </h1>
+
+    </div>
+
+</section>
+
+<main>
+
+<section class="quote">
+
+    <p data-fr="Vous souhaitez organiser un cours, un atelier, une retraite ou un événement autour de la Méthode Vyoma. Laissez votre message ci-dessous."
+        data-en="You would like to organize a class, workshop, retreat or event around the Vyoma Method. Leave your message below.">
+        Vous souhaitez organiser un cours, un atelier, une retraite ou<br>
+        un événement autour de la Méthode Vyoma.<br>
+        Laissez votre message ci-dessous.
+    </p>
+
+</section>
+
+<section class="contact-section">
+
+    <div class="contact-left">
+
+        <form class="contact-form"
+            id="collabForm"
+            action="https://formspree.io/f/xlgvvggz"
+            method="POST">
+
+            <input type="text"
+                name="name"
+                placeholder="Nom / Prénom"
+                data-fr-placeholder="Nom / Prénom"
+                data-en-placeholder="Full name">
+
+            <input type="email"
+                name="email"
+                placeholder="Email"
+                data-fr-placeholder="Email"
+                data-en-placeholder="Email">
+
+            <input type="text"
+                name="subject"
+                placeholder="Sujet"
+                data-fr-placeholder="Sujet"
+                data-en-placeholder="Subject">
+
+            <textarea name="message"
+                    placeholder="Message"
+                    data-fr-placeholder="Message"
+                    data-en-placeholder="Message"></textarea>
+
+            <button type="submit"
+                    class="btn-rounded"
+                    data-fr="Envoyer"
+                    data-en="Send">
+                Envoyer
+            </button>
+
+        </form>
+    <div class="success-message" id="collabSuccess">
+        Merci pour votre message.<br>
+        Vous recevrez une réponse rapidement.
+    </div>
+
+    </div>
+
+    <div class="contact-divider"></div>
+
+    <div class="contact-right">
+
+        <span>
+            <a class="social-link" href="https://www.instagram.com/vyomamethod/" target="_blank" rel="noopener">
+                <img src="assets/logo-insta.png" alt="Instagram">
+                <p>@vyomamethod</p>
+            </a>
+        </span>
+
+        <span>
+            <a class="social-link" href="https://www.youtube.com/@vyomastudio" target="_blank" rel="noopener">
+                <img src="assets/logo-youtube.png" alt="YouTube">
+                <p>@vyomastudio</p>
+            </a>
+        </span>
+    </div>
+
+</section>
+
+</main>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-left">
+                &copy; Vyomastudio – 2026 <br>
+                Made by Studio sur la lune
+            </div>
+
+            <div class="footer-center">
+                <button data-type="cgv" data-fr="CGV" data-en="Terms">CGV</button>
+                <button data-type="privacy" data-fr="Politique de confidentialité" data-en="Privacy Policy">Politique de confidentialité</button>
+                <button data-type="legal" data-fr="Mentions légales" data-en="Legal Notice">Mentions légales</button>
+            </div>
+
+            <div class="footer-right">
+                <a href="https://www.instagram.com/vyomamethod/" target="_blank" rel="noopener">
+                    <img src="assets/logo-insta-foot.png" alt="Instagram">
+                    
+                </a>
+                <a href="collaboration-evenements.html">
+                    <img src="assets/enveloppe.png" alt="Contact">
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+<script src="langue.js" defer></script>
+<script src="formulaire-collaboration.js" defer></script>
+</body>
+</html>

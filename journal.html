@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <meta name="description" content="La Méthode Vyoma : une méthode pour stabiliser et clarifier l'esprit.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="journal.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo Vyoma">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="la-methode-vyoma.html" data-fr="La Méthode" data-en="The Method">La Méthode</a></li>
+                <li><a href="session.html" data-fr="Sessions" data-en="Sessions">Sessions</a></li>
+                <li><a href="programme.html" data-fr="Programme" data-en="Program">Programme</a></li>
+                <li><a href="journal.html" data-fr="Journal" data-en="Journal">Journal</a></li>
+                <li><a href="a-propos.html" data-fr="À propos" data-en="About">À propos</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <button id="langToggle">EN</button>
+    </header>
+
+    <div class="header-gradient"></div>
+
+    <section class="hero">
+        <img src="assets/acceuil-journal.png" alt="Journal">
+        <div class="hero-text hero-left">
+            <h1 data-fr="JOURNAL" data-en="JOURNAL">JOURNAL</h1>
+        </div>
+    </section>
+
+    <main>
+        <section class="quote">
+            <p 
+            data-fr="La Méthode Vyoma explore la relation entre stabilité corporelle, attention et présence.<br>Ce journal rassemble réflexions, pratiques et recherches autour de cette approche."
+            data-en="The Vyoma Method explores the relationship between physical stability, attention and presence.<br>This journal gathers reflections, practices and research around this approach.">
+
+                La Méthode Vyoma explore la relation entre stabilité corporelle, attention et présence.<br>
+                Ce journal rassemble réflexions, pratiques et recherches autour de cette approche.
+
+            </p>
+        </section>
+
+        <section class="journal-gallery">
+            <h2 data-fr="ARTICLES" data-en="ARTICLES">ARTICLES</h2>
+
+            <div class="image-grid">
+
+                <div class="image-item" data-modal="assets/article-01.jpg">
+                    <img src="assets/image1.jpg" alt="Article 1">
+                    <div class="overlay"
+                    data-fr="<strong>Stabilité comme base</strong><br>La stabilité du corps influence directement la qualité de l’attention. Ce travail constitue le point de départ de la Méthode Vyoma."
+                    data-en="<strong>Stability as a foundation</strong><br>Body stability directly influences the quality of attention. This work is the starting point of the Vyoma Method.">
+
+                        <strong>Stabilité comme base</strong><br>
+                        La stabilité du corps influence directement la qualité de l’attention. 
+                        Ce travail constitue le point de départ de la Méthode Vyoma.
+
+                    </div>
+                </div>
+
+                <div class="image-item" data-modal="assets/article-02.jpg">
+                    <img src="assets/image2.png" alt="Article 2">
+                    <div class="overlay"
+                    data-fr="<strong>Respiration et rythme</strong><br>Le souffle régule l’intensité de la pratique et permet de structurer l’effort."
+                    data-en="<strong>Breath and rhythm</strong><br>Breathing regulates the intensity of the practice and structures effort.">
+
+                        <strong>Respiration et rythme</strong><br>
+                        Le souffle régule l’intensité de la pratique et permet de structurer l’effort.
+
+                    </div>
+                </div>
+
+                <div class="image-item" data-modal="assets/article-03.jpg">
+                    <img src="assets/image3.png" alt="Article 3">
+                    <div class="overlay"
+                    data-fr="<strong>Présence incarnée</strong><br>La pratique vise à développer une présence claire, stable et engagée."
+                    data-en="<strong>Embodied presence</strong><br>The practice aims to develop a clear, stable and engaged presence.">
+
+                        <strong>Présence incarnée</strong><br>
+                        La pratique vise à développer une présence 
+                        claire, stable et engagée.
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="youtube-gallery">
+            <h2 data-fr="VIDÉOS" data-en="VIDEOS">VIDÉOS</h2>
+
+            <p data-fr="Section en cours de construction." data-en="Section under construction.">
+                Section en cours de construction.
+            </p>
+
+            <!--<div class="carousel-container">
+                <button class="carousel-prev">
+                    <img src="assets/fleche-gauche.png" alt="Précédent">
+                </button>
+
+                <div class="carousel-track">
+                    exemple : https://www.youtube.com/watch?v=z9Ug-3qhrwY
+                    Récupérer l’ID de la vidéo : z9Ug-3qhrwY (tout ce qui vient après ?v=)
+                    Créer le lien pour l’iframe : https://www.youtube.com/embed/z9Ug-3qhrwY
+                    Récupérer la miniature : https://img.youtube.com/vi/z9Ug-3qhrwY/hqdefault.jpg
+                    <div class="carousel-item" data-video="https://www.youtube.com/embed/z9Ug-3qhrwY">
+                        <img src="https://img.youtube.com/vi/z9Ug-3qhrwY/hqdefault.jpg" alt="Nouvelle vidéo">
+                    </div>
+                    <div class="carousel-item" data-video="https://www.youtube.com/watch?v=z9Ug-3qhrwY">
+                        <img src="https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg" alt="Vidéo 2">
+                    </div>
+                    <div class="carousel-item" data-video="https://www.youtube.com/embed/VIDEO_ID_3">
+                        <img src="https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg" alt="Vidéo 3">
+                    </div>
+                    <div class="carousel-item" data-video="https://www.youtube.com/embed/VIDEO_ID_3">
+                        <img src="https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg" alt="Vidéo 3">
+                    </div>
+                </div>
+
+                <button class="carousel-next">
+                    <img src="assets/fleche-droite.png" alt="Suivant">
+                </button>
+            </div>-->
+        </section>
+
+        <!-- Modal vidéo 
+        <div class="video-modal" id="videoModal">
+            <span class="video-close">&times;</span>
+            <iframe id="videoIframe" width="900" height="506" frameborder="0" allowfullscreen></iframe>
+        </div>-->
+
+        <section class="image-gallery">
+            <h2 data-fr="GALERIE" data-en="GALLERY">GALERIE</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="assets/galerie/galerie1.png"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie2.png"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie3.png"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie4.png"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie5.png"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie6.png"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie7.jpg"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie8.jpg"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie9.jpg"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie10.jpg"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie11.jpg"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie12.jpg"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie13.jpg"></div>
+                <div class="gallery-item"><img src="assets/galerie/galerie14.jpg"></div>
+            </div>
+        </section>
+
+        <div id="galleryModal" class="gallery-modal">
+            <span class="gallery-close">&times;</span>
+            <img id="galleryModalImg" src="" alt="Image agrandie">
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-left">
+                &copy; Vyomastudio – 2026 <br>
+                Made by Studio sur la lune
+            </div>
+
+            <div class="footer-center">
+                <button data-type="cgv" data-fr="CGV" data-en="Terms">CGV</button>
+                <button data-type="privacy" data-fr="Politique de confidentialité" data-en="Privacy Policy">Politique de confidentialité</button>
+                <button data-type="legal" data-fr="Mentions légales" data-en="Legal Notice">Mentions légales</button>
+            </div>
+
+            <div class="footer-right">
+                <a href="https://www.instagram.com/vyomamethod/" target="_blank" rel="noopener">
+                    <img src="assets/logo-insta-foot.png" alt="Instagram">
+                    
+                </a>
+                <a href="collaboration-evenements.html">
+                    <img src="assets/enveloppe.png" alt="Contact">
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div id="imageModal" class="image-modal">
+        <span class="image-close">&times;</span>
+        <img id="modalImg" class="image-modal-content" src="" alt="Article agrandi">
+    </div>
+
+    <script src="main.js" defer></script>
+    <script src="langue.js" defer></script>
+
+</body>
+</html>
