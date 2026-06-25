@@ -1,0 +1,157 @@
+.split-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    padding: 30px 20px 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image */
+.split-image img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    border-radius: 15px;
+}
+
+/* Texte */
+.split-text {
+    max-width: 500px;
+}
+
+.split-text h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.split-text h3 {
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.split-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.split-paragraphs {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.split-paragraphs .split-paragraph {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  /* empile titre + paragraphe verticalement */
+    justify-content: center; /* centre verticalement le texte par rapport à la hauteur de la section */
+    position: relative;
+    padding-left: 20px; /* espace pour le trait */
+}
+
+.split-paragraphs .split-paragraph::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;        /* largeur du trait */
+    height: 100%;      /* prend la hauteur du bloc */
+    background-color: #38211A;
+}
+
+.split-paragraphs h3 {
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.split-paragraphs p {
+    margin: 0;
+    line-height: 1.6;
+
+}
+
+.split-paragraphs .text-top {
+    margin-bottom: 20px;
+}
+
+.btn-container a {
+    color: #38211A;
+    border: 0.5px solid #38211A;
+}
+
+@media (max-width: 600px) {
+
+    .split-paragraphs {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .quote {
+        padding: 10px 5px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .quote p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        background-color: #F7F1E6;
+        padding: 15px 0 5px 0;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .banner h1 {
+        display: block;
+        position: relative;
+    }
+
+    .banner-methode {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        font-size: 1.1rem;
+        padding-top: 20px;
+    }
+
+    .banner-texts span p {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .split-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 0px 20px 20px 20px;
+    }
+
+    .btn-container .btn-rounded {
+        font-size: 1rem;
+        padding: 18px 30px;
+    }
+}

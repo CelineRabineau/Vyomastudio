@@ -1,0 +1,232 @@
+.banner {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-methode {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 1800px;
+    padding: 0 20px;
+    color: #38211A;
+    z-index: 2;
+}
+
+.banner-methode p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner h1 {
+    display: none;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0px 15px;
+}
+
+.split-section {
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.split-section .split-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+.split-section .split-image img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    border-radius: 15px;
+}
+
+.split-section .split-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.split-text h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.split-section .split-text span {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.split-section .split-text span img {
+    width: 70px;
+    height: auto;
+}
+
+.split-section .split-text span p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.split-paragraphs {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.split-paragraphs .split-paragraph {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  /* empile titre + paragraphe verticalement */
+    justify-content: center; /* centre verticalement le texte par rapport à la hauteur de la section */
+    position: relative;
+    padding-left: 20px; /* espace pour le trait */
+}
+
+.split-paragraphs .split-paragraph::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;        /* largeur du trait */
+    height: 100%;      /* prend la hauteur du bloc */
+    background-color: #38211A;
+}
+
+.split-paragraphs h3 {
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.split-paragraphs p {
+    margin: 0;
+    line-height: 1.6;
+
+}
+
+.split-paragraphs .text-top {
+    margin-bottom: 20px;
+}
+
+.quote {
+    text-align: center;
+    padding: 30px 10px 50px 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.quote p {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.btn-container {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.btn-container a {
+    color: #38211A;
+    border: 0.5px solid #38211A;
+}
+
+
+@media (max-width: 600px) {
+
+    .split-paragraphs {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .quote {
+        padding: 10px 5px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .quote p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        background-color: #F7F1E6;
+        padding: 15px 0 5px 0;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .banner h1 {
+        display: block;
+        position: relative;
+    }
+
+    .banner-methode {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        font-size: 1.1rem;
+        padding-top: 20px;
+    }
+
+    .banner-texts span p {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .split-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 0px 20px 20px 20px;
+    }
+
+    .btn-container .btn-rounded {
+        font-size: 1rem;
+        padding: 18px 30px;
+    }
+}
